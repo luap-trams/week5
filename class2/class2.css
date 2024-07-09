@@ -1,0 +1,42 @@
+main
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 150px);
+    grid-template-areas: 
+    "a a"
+    "a a"
+    "b c"
+    "d c"
+    "d c"
+    "e e";
+   gap: 20px;
+}
+
+article
+{
+    background-color: #9b9bdf;
+}
+article:nth-of-type(1)
+{
+grid-area: a;
+}
+article:nth-of-type(2)
+{
+grid-area: b;
+}
+article:nth-of-type(3)
+{
+grid-area: c;
+}
+article:nth-of-type(4)
+{
+grid-area: d;
+}
+article:nth-of-type(5)
+{
+grid-area: e;
+}
+
+
+
