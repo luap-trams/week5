@@ -1,0 +1,147 @@
+main *
+{
+    margin: 0;
+    
+}
+section
+{
+    background-color: rgb(42, 130, 165);}
+main
+{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 150px);
+    grid-template-areas: 
+    "home home header header header header documentary documentary"
+    "home home sports sports news movies music documentary"
+    "about about sports news movies music documentary documentary"
+    "about about art1 art1 art2 art2 subart1 subart1"
+    "contact contact art1 art1 art2 art2 subart2 subart2"
+    "contact contact art1 art1 art2 art2 subart3 subart3"
+    "testimonial testimonial footer footer footer footer subart4 subart4"
+    "testimonial testimonial footer footer footer footer subart5 subart5"
+    ;
+    gap: 20px;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    text-align: center;
+}
+
+.nav
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 150px);
+    grid-template-areas: "home about contact testimonial"
+    ;
+    gap: 20px;
+    text-transform: uppercase;
+    padding: 40px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+p
+{
+    font-size: 12px;
+    text-align: justify;
+    text-transform:capitalize;
+}
+h2
+{
+    color: white;
+}
+
+section:nth-of-type(1)
+{
+    grid-area: 1/1/3/3;
+    background-color: #2368FC;
+}
+section:nth-of-type(2)
+{
+    grid-area: 3/1/5/3;
+    background-color: #2368FC;
+}
+section:nth-of-type(3)
+{
+    grid-area: 5/1/7/3;
+    background-color: #2368FC;
+}
+section:nth-of-type(4)
+{
+    grid-area: 7/1/9/3;
+    background-color: #2368FC;
+}
+section:nth-of-type(5)
+{
+    grid-area: 1/3/2/7;
+}
+section:nth-of-type(6)
+{
+    grid-area: 2/3/4/4;
+    background-color: #23ADFC;
+    background-image: url("./sports.png");
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: bottom;
+
+}
+section:nth-of-type(7)
+{
+    grid-area: 2/4/4/5;
+    background-color: #23ADFC;
+    
+}
+section:nth-of-type(8)
+{
+    grid-area: 2/5/4/6;
+    background-color: #23ADFC;
+}
+section:nth-of-type(9)
+{
+    grid-area: 2/6/4/7;
+    background-color: #23ADFC;
+}
+section:nth-of-type(10)
+{
+    grid-area: 1/7/4/9;
+}
+section:nth-of-type(11)
+{
+    grid-area: 4/3/7/5;
+    background-color: white;
+    border: black;
+    
+}
+section:nth-of-type(12)
+{
+    grid-area: 4/5/7/7;
+    background-color: white;
+}
+section:nth-of-type(13)
+{
+    grid-area: 4/7/5/9;
+}
+section:nth-of-type(14)
+{
+    grid-area: 5/7/6/9;
+}
+section:nth-of-type(15)
+{
+    grid-area: 6/7/7/9;
+}
+section:nth-of-type(16)
+{
+    grid-area: 7/3/9/7;
+}
+section:nth-of-type(17)
+{
+    grid-area: 7/7/8/9;
+}
+section:nth-of-type(18)
+{
+    grid-area: 8/7/9/9;
+}
