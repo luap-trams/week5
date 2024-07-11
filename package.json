@@ -1,0 +1,18 @@
+{
+  "name": "week5",
+  "version": "1.0.0",
+  "description": "introduction to tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", "paul": "tailwindcss -i ./paul.css -o ./paultwcss/paul.css --watch"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Paul Smart",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
